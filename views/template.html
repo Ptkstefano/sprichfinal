@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Sprich</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="stylesheets/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.6/dist/css/uikit.min.css" />
+		<noscript><link rel="stylesheet" href="stylesheets/noscript.css" /></noscript>
+		<script src="jquery.min.js"></script>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+
+				<header id="header">
+					<div class="inner">
+
+						<!-- Logo -->
+							<a href="/" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span>
+								<span class = "title-text">
+									<span class= "title">SPRICH</span>
+									<br>
+									<span class = "subtitle">The coolest language school</span>
+							</span>
+							</a>
+
+						<!-- Nav -->
+
+					</div>
+
+				<!-- Login form -->
+			<!--
+				<div class = "login-form-top">
+					<form method = "POST" action="/login">
+						<h4>login</h4>
+						<input type = "text" name = "login" placeholder = "username"></input>
+						<input type = "text" name = "password" placeholder = "password"></input>
+						<input type = "submit" id = "login-button"></input>
+					</form>
+				</div>
+			-->
+
+				</header>
+				<!-- header menu-->
+				<div class="topnav">
+					{{ topnav | safe }}
+				</div>
+
+				<div class ="login-info">
+					{{ username }}
+				</div>
+
+				<!-- Menu 
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+				-->
+
+
+
+
+				<!-- Main -->
+			<div id = main>
+				{% block main %}{% endblock %}
+			</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="/contact">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<!--<h2>Follow</h2>
+								 <ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								</ul> -->
+							</section>
+							<ul class="copyright">
+								<li>&copy; Sprich. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Website by Patrick Stefano for CS50's final project</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

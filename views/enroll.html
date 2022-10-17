@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+
+{% extends "template.html" %}
+
+
+{% block main %}
+
+<form action = '/enroll' method='post' style='text-align:center'>
+<h2 style='text-align:center'>Are you sure you want to enroll into {{ course }}?</h2>
+<input type = "submit" value = "Enroll" style='text-align:center'>
+</form>
+
+
+{% endblock %}

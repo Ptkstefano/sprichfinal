@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+
+
+{% block main %}
+
+<div class = "course-main">
+
+    <div style="width: 40%; border-radius: 8px; margin-left: auto; margin-right: auto;">
+        {{ courseImage | safe }}
+    </div>
+    
+    <h1>
+        {{ courseTitle | safe }}
+    </h1>
+    <div id = "course-text">{{ courseText | safe }}</div>
+    <br>
+        {{ action | safe }}
+        <div id = "course-button">
+            <button>Click here to register for this class</button>
+        </div>
+    </a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+
+{% block main %}
+
+<div class = "login-form-main">
+
+    <form method = "POST" action="/login">
+        <h4>login</h4>
+        <input type = "email" name = "email" placeholder = "E-mail"></input>
+        <input type = "password" name = "password" placeholder = "Password"></input>
+        <br>
+        <input type = "submit" id = "login-button"></input>
+    </form>
+</div>
+<br>
+
+<div class = "login-form-main">
+    <p>Not yet registered?</p>
+    <form action="/register">
+
+        <button type="submit" >Register</button>
+
+    </form>
+</div>
+
+
+{% endblock %}
